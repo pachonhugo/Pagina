@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Página</title>
+</head>
+<body>
+<script>
+
+function primera(){
+	alert(cuadroID.value);
+}
+
+function segunda(){
+	alert(cuadroNombre.value);
+}
+
+function tercera(){
+	alert(cuadroEdad.value);
+}
+
+</script>
+
+<style>
+	.cuadro{
+		border: 1px solid blue;
+		height: 15px;
+		background-color: #FF0000;
+	}
+
+	#boton{
+		border: 5px solid red;
+	}
+
+
+</style>
+<form>
+	<label><FONT SIZE=18><FONT face="Arial">ID</FONT></FONT></label><input type="text" onclick="primera()" class="cuadro" id="cuadroID"><br><br>
+	<label><FONT SIZE=18><FONT face="Arial">Nombre</FONT></FONT></label><input type="text" onclick="segunda()" class="cuadro" id="cuadroNombre"><br><br>
+	<label><FONT SIZE=18><FONT face="Arial">Edad</FONT></FONT></label><input type="text" onclick="tercera()" class="cuadro" id="cuadroEdad"><br><br>
+	<input type="submit" value="Aceptar" id="boton">
+</form>
+</body>
+</html>
